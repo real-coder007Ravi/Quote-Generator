@@ -9,10 +9,10 @@ async function getQuote(url) {
 }
 
 function tweet() {
-	window.open(
-		"https://twitter.com/intent/tweet?text=" +
-			quote.innerHTML + "----by " + author.innerHTML,
-		"Tweet Window",
-		"width=600,height=300"
-	);
+    var tweetText = encodeURIComponent(quote.innerHTML + " ----by " + author.innerHTML);
+    window.open(
+        "https://twitter.com/intent/tweet?text=" + tweetText,
+        "Tweet Window",
+        "width=600,height=300"
+    );
 }
