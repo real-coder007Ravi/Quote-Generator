@@ -10,7 +10,7 @@ async function getQuote(url) {
 
 function tweet() {
 	window.open(
-		"https://twitter.com/intent/tweet?text " +
+		"https://twitter.com/intent/tweet?text= " +
 			quote.innerHTML +
 			"----by " +
 			author.innerHTML,
